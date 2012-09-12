@@ -25,7 +25,7 @@ cp -rf ~/.config/pianobar $HERE;
 # push to git
 cd $HERE; 
 git add .; # add all untracked files
-git commit -a -m "automated commit from ${USER}@${HOSTNAME} $(date)";
+git commit -a -m "automated commit from $(whoami)@$(uname -n) $(date)";
 git push -u github master;
 
 # done
