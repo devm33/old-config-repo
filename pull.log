@@ -1,2 +1,9 @@
 Wed Sep 12 16:55:50 EDT 2012 ./pull.sh updating config_repo
 COPYING CONFIG FILES TO .
+[master 5ac28f0] automated commit from dev@dmehta Wed Sep 12 16:55:50 EDT 2012
+ 4 files changed, 7 insertions(+), 2 deletions(-)
+ create mode 100644 pull.log
+Branch master set up to track remote branch master from github.
+DONE
+Wed Sep 12 17:00:01 EDT 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
+COPYING CONFIG FILES TO /home/dev/testcode/config_repo

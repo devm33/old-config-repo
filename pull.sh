@@ -20,7 +20,7 @@ cp -f ~/.bash_logout $HERE/bash_logout;
 cp -f ~/.vimrc $HERE/vimrc;
 
 ## pianobar
-cp -rf ~/.config/pianobar $HERE/pianobar;
+cp -rf ~/.config/pianobar $HERE;
 
 # push to git
 cd $HERE; 
