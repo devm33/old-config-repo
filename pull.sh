@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script to pull config files into this directory
+# Then commits the files to git and pushes to github
 #
 # devraj mehta
 
@@ -21,7 +22,11 @@ cp -f ~/.vimrc $HERE/vimrc;
 ## pianobar
 cp -rf ~/.config/pianobar $HERE/pianobar;
 
-
+# push to git
+cd $HERE; 
+git add .; # add all untracked files
+git commit -a -m "automated commit from ${USER}@${HOSTNAME } `date`";
+git push -u github master;
 
 # done
 echo "DONE";
