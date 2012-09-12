@@ -6,7 +6,7 @@
 # devraj mehta
 
 HERE="`dirname ${BASH_SOURCE[0]}`" # regardless of caller loc put files $HERE
-
+echo "$(date) ${0} updating config_repo";
 echo "COPYING CONFIG FILES TO $HERE";
 
 # copy the files
