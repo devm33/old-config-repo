@@ -1,0 +1,133 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /var/www/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ExpiresActive On
+	ExpiresDefault "access plus 0 seconds"
+
+	Alias /htmlencode /home/dev/scripts/htmlencode
+	<Directory /home/dev/scripts/htmlencode>
+		Options FollowSymLinks -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /cachetest /home/dev/scripts/filesize
+	<Directory /home/dev/scripts/filesize>
+		Options FollowSymLinks -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+	RewriteEngine on
+	RewriteRule ^/cachetest/file-([0-9]+).html$ /home/dev/scripts/filesize/index.php?f=$1
+	
+
+	Alias /scripts /home/dev/scripts
+	<Directory /home/dev/scripts>
+		Options FollowSymLinks -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	RewriteRule ^/code(.*)$ /home/dev/scripts/showcode/code.php?p=$1 [L]
+
+
+	Alias /assets /home/dev/assets
+	<Directory /home/dev/assets>
+		Options -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /offline /home/dev/testcode/offline
+	<Directory /home/dev/testcode/offline>
+		Options -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /offline-test /home/dev/testcode/offline-test
+	<Directory /home/dev/testcode/offline-test>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	# ajax content type
+	AddType application/json .json
+
+	Alias /autocomplete /home/dev/testcode/autocomplete
+	<Directory /home/dev/testcode/autocomplete>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /things-made /home/dev/Pictures/things-made
+	<Directory /home/dev/Pictures/things-made>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	# mime-types for video
+	AddType video/mp4 .mp4
+	AddType video/webm .webm
+	AddType video/ogg .ogv
+	
+	Alias /attractloop /home/dev/video/attractloop
+	<Directory /home/dev/video/attractloop>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	# mime-type for offline cache
+	AddType text/cache-manifest .appcache
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	RewriteLog /home/dev/logs/rewrite.log
+	RewriteLogLevel 7
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	CustomLog /home/dev/logs/apache.log combined
+
+    Alias /doc/ "/usr/share/doc/"
+    <Directory "/usr/share/doc/">
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    </Directory>
+
+</VirtualHost>

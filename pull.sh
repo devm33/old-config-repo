@@ -22,6 +22,9 @@ cp -f ~/.vimrc $HERE/vimrc;
 ## pianobar
 cp -rf ~/.config/pianobar $HERE;
 
+## apache2
+cp -rf /etc/apache2/sites-available $HERE;
+
 # push to git
 cd $HERE; 
 git add .; # add all untracked files
