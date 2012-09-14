@@ -1,3 +1,5 @@
+alias refresh-term="clear;source ~/.bashrc"
+
 alias display-busy-term="toilet -f future --metal ' B  U  S  Y '"
 
 alias makedatedir="mkdir `date +%d_%m_%Y`"
