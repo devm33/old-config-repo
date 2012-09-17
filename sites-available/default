@@ -101,6 +101,14 @@
 	# mime-type for offline cache
 	AddType text/cache-manifest .appcache
 
+	Alias /autobuild /home/dev/digitalassent/prod-build/scripts/autobuild
+	<Directory /home/dev/digitalassent/prod-build/scripts/autobuild>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
 	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 	<Directory "/usr/lib/cgi-bin">
 		AllowOverride None
