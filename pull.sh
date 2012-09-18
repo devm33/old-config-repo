@@ -21,6 +21,11 @@ cp -f ~/.vimrc $HERE/vimrc;
 
 ## pianobar
 cp -rf ~/.config/pianobar $HERE;
+# remove password from config
+cat $HERE/pianobar/config | grep -v password > $HERE/pianobar/tmp;
+rm -f $HERE/pianobar/config;
+cat $HERE/pianobar/tmp > $HERE/pianobar/config;
+rm -f $HERE/pianobar/tmp;
 
 ## apache2
 cp -rf /etc/apache2/sites-available $HERE;
