@@ -318,3 +318,5 @@ COPYING CONFIG FILES TO /home/dev/testcode/config_repo
  1 files changed, 6 insertions(+), 0 deletions(-)
 Branch master set up to track remote branch master from github.
 DONE
+Wed Sep 19 18:00:01 EDT 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
+COPYING CONFIG FILES TO /home/dev/testcode/config_repo
