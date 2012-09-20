@@ -380,3 +380,9 @@ Branch master set up to track remote branch master from github.
 DONE
 Thu Sep 20 14:00:01 EDT 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
 COPYING CONFIG FILES TO /home/dev/testcode/config_repo
+[master f77845f] automated commit from dev@dmehta Thu Sep 20 14:00:01 EDT 2012
+ 2 files changed, 7 insertions(+), 1 deletions(-)
+Branch master set up to track remote branch master from github.
+DONE
+Thu Sep 20 16:00:01 EDT 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
+COPYING CONFIG FILES TO /home/dev/testcode/config_repo
