@@ -103,7 +103,16 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 ## add ./ to path
-export PATH="$PATH:./:/var/lib/gems/1.8/bin:~/ffmpeg"
+export PATH="$PATH:./"
+
+## add ruby gems to path
+export PATH="$PATH:/var/lib/gems/1.8/bin"
+
+## add custom install of ffmpeg to path
+#export PATH="$PATH:~/ffmpeg"
+
+## add jmeter to path
+export PATH="$PATH:/usr/share/jakarta-jmeter-2.5.1/bin"
 
 # have a fortune
 echo -ne "\e[1;31m";
