@@ -113,7 +113,7 @@ alias checkp='c=0;for i in $(jobs);do c=$[$c+1];done;if [ $c -ne 0 ];then noclos
 alias playpausepianobar="echo -n 'p' > ~/.config/pianobar/ctl"
 alias likecurrentpianobar="echo -n '+' > ~/.config/pianobar/ctl"
 
-alias nprompt="PS1='${Color_Off}${BGreen}\u${Blue}@${BGreen}`hostname -I` ${BBlue}\w \$ ${Color_Off}'"
+alias nprompt="PS1='${Color_Off}${BGreen}\u${Blue}@${BGreen}`hostname -I` ${BBlue}\w \n\$ ${Color_Off}'"
 
 
 alias searchforhosts="nmap -sP 192.168.1.0-255"
