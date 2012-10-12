@@ -114,6 +114,9 @@ export PATH="$PATH:/var/lib/gems/1.8/bin"
 ## add jmeter to path
 export PATH="$PATH:/usr/share/jakarta-jmeter-2.5.1/bin"
 
+## add sbt
+export PATH="$PATH:/usr/share/sbt/bin"
+
 # have a fortune
 echo -ne "\e[1;31m";
 funny-fortune
