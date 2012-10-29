@@ -2,6 +2,8 @@ alias refresh-term="clear;source ~/.bashrc"
 
 alias display-busy-term="toilet -f future --metal ' B  U  S  Y '"
 
+alias weinre_open="node /home/dev/node_modules/weinre/weinre --httpPort 8081 --boundHost -all- "
+
 alias makedatedir="mkdir `date +%d_%m_%Y`"
 
 alias show-log-pianobar="cat ~/logs/pianobar-fifo.log"
