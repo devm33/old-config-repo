@@ -105,6 +105,10 @@ alias showmyinuse='mysql -uroot -pamesbery56 -e "show open tables where in_use"'
 alias showmyprocess='mysql -uroot -pamesbery56 -e "show processlist"'
 alias localmytop='mytop -uroot -pamesbery56'
 alias localmysql='mysql -uroot -pamesbery56'
+
+alias adserver='localmysql adserver '
+alias patientpad='localmysql patientpad '
+
 alias omnibot.on.dev='ssh -p 712 omnibot@dev.patient-pad.com'
 alias dev.connect='ssh -p 712 devraj@dev.patient-pad.com'
 alias nprompt_old="PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '"
