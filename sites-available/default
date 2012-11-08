@@ -109,6 +109,14 @@
 		allow from all
 	</Directory>
 
+	Alias /da-assets /home/dev/digitalassent/prod-health/working-all/.working/patientpad/data/assets/
+	<Directory /home/dev/digitalassent/prod-health/working-all/.working/patientpad/data/assets/>
+		Options Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+	
 	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 	<Directory "/usr/lib/cgi-bin">
 		AllowOverride None
