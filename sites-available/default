@@ -116,7 +116,15 @@
 		Order allow,deny
 		allow from all
 	</Directory>
-	
+
+	Alias /blaze /home/dev/blaze/
+	<Directory /home/dev/blaze/>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
 	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 	<Directory "/usr/lib/cgi-bin">
 		AllowOverride None
