@@ -1,3 +1,5 @@
+alias ed-appcache="vim /var/www/offline.appcache"
+
 alias refresh-term="clear;source ~/.bashrc"
 
 alias display-busy-term="toilet -f future --metal ' B  U  S  Y '"

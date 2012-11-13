@@ -40,6 +40,14 @@
 		Order allow,deny
 		allow from all
 	</Directory>
+	
+	Alias /testcode /home/dev/testcode/
+	<Directory /home/dev/testcode/>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
 
 	RewriteRule ^/code(.*)$ /home/dev/scripts/showcode/code.php?p=$1 [L]
 
