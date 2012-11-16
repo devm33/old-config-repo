@@ -14,6 +14,7 @@ alias show-logs="ls ~/logs"
 alias show-apache-log="cat /var/log/apache2/access.log"
 alias clear-ff-offline-cache="rm -rf /home/dev/.mozilla/firefox/hnssk6cj.default/OfflineCache/*"
 alias cd-to-wwwroot="cd /home/dev/digitalassent/prod-health/development/modules/com.digitalassent.patientpad/wwwroot/"
+alias cd-to-da-assets="cd /home/dev/digitalassent/prod-health/working-all/.working/patientpad/data/assets/"
 alias cd-to-autobuild="cd /home/dev/digitalassent/prod-build/scripts/autobuild/"
 alias funny-fortune="fortune disclaimer"
 
