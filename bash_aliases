@@ -1,3 +1,4 @@
+alias llr="ls -lR"
 alias ed-appcache="vim /var/www/offline.appcache"
 
 alias refresh-term="clear;source ~/.bashrc"
