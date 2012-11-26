@@ -3086,3 +3086,10 @@ Branch master set up to track remote branch master from github.
 DONE
 Mon Nov 26 14:00:01 EST 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
 COPYING CONFIG FILES TO /home/dev/testcode/config_repo
+[master 276ef5b] automated commit from dev@dmehta Mon Nov 26 14:00:01 EST 2012
+ 4 files changed, 32 insertions(+), 2 deletions(-)
+ rewrite pianobar/stationlist (72%)
+Branch master set up to track remote branch master from github.
+DONE
+Mon Nov 26 16:00:01 EST 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
+COPYING CONFIG FILES TO /home/dev/testcode/config_repo
