@@ -3123,3 +3123,9 @@ Branch master set up to track remote branch master from github.
 DONE
 Tue Nov 27 02:00:01 EST 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
 COPYING CONFIG FILES TO /home/dev/testcode/config_repo
+[master d1d47f1] automated commit from dev@dmehta Tue Nov 27 02:00:01 EST 2012
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+Branch master set up to track remote branch master from github.
+DONE
+Tue Nov 27 04:00:01 EST 2012 /home/dev/testcode/config_repo/pull.sh updating config_repo
+COPYING CONFIG FILES TO /home/dev/testcode/config_repo
