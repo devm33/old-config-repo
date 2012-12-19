@@ -23,6 +23,14 @@
 		allow from all
 	</Directory>
 
+	Alias /resume /home/dev/Dropbox/resume/most_recent_pdf.php
+	Alias /cv /home/dev/Dropbox/resume/most_recent_pdf.php
+	<Directory /home/dev/Dropbox/resume>
+		Options -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+
 	Alias /cachetest /home/dev/scripts/filesize
 	<Directory /home/dev/scripts/filesize>
 		Options FollowSymLinks -Indexes
