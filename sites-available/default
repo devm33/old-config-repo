@@ -23,6 +23,14 @@
 		allow from all
 	</Directory>
 
+	Alias /resume /home/dev/Dropbox/resume/most_recent_pdf.php
+	Alias /cv /home/dev/Dropbox/resume/most_recent_pdf.php
+	<Directory /home/dev/Dropbox/resume>
+		Options -Indexes
+		Order allow,deny
+		allow from all
+	</Directory>
+
 	Alias /cachetest /home/dev/scripts/filesize
 	<Directory /home/dev/scripts/filesize>
 		Options FollowSymLinks -Indexes
@@ -36,6 +44,14 @@
 	Alias /scripts /home/dev/scripts
 	<Directory /home/dev/scripts>
 		Options FollowSymLinks -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+	
+	Alias /testcode /home/dev/testcode/
+	<Directory /home/dev/testcode/>
+		Options -Indexes
 		AllowOverride All
 		Order allow,deny
 		allow from all
@@ -103,6 +119,22 @@
 
 	Alias /autobuild /home/dev/digitalassent/prod-build/scripts/autobuild
 	<Directory /home/dev/digitalassent/prod-build/scripts/autobuild>
+		Options -Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /da-assets /home/dev/digitalassent/prod-health/working-all/.working/patientpad/data/assets/
+	<Directory /home/dev/digitalassent/prod-health/working-all/.working/patientpad/data/assets/>
+		Options Indexes
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	Alias /blaze /home/dev/blaze/
+	<Directory /home/dev/blaze/>
 		Options -Indexes
 		AllowOverride All
 		Order allow,deny
