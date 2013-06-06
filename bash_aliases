@@ -1,16 +1,14 @@
+alias llr="ls -lR"
+alias la="ls -a"
+alias ll="ls -ltr"
+alias lla="ls -ltra"
 alias refresh-term="clear;source ~/.bashrc"
 
 alias display-busy-term="toilet -f future --metal ' B  U  S  Y '"
 
-alias makedatedir="mkdir `date +%d_%m_%Y`"
+alias weinre_open="node /home/dev/node_modules/weinre/weinre --httpPort 8081 --boundHost -all- "
 
-alias show-log-pianobar="cat ~/logs/pianobar-fifo.log"
-alias show-log-homebackup="cat ~/logs/homebackup.log"
-alias show-logs="ls ~/logs"
-alias show-apache-log="cat /var/log/apache2/access.log"
-alias clear-ff-offline-cache="rm -rf /home/dev/.mozilla/firefox/hnssk6cj.default/OfflineCache/*"
-alias cd-to-wwwroot="cd /home/dev/digitalassent/prod-health/development/modules/com.digitalassent.patientpad/wwwroot/"
-alias cd-to-autobuild="cd /home/dev/digitalassent/prod-build/scripts/autobuild/"
+alias makedatedir="mkdir `date +%d_%m_%Y`"
 alias funny-fortune="fortune disclaimer"
 
 alias lh="ls -lhS"
@@ -22,7 +20,7 @@ alias pwd="pwd -P" #force full path
 # Colors
 
 # Reset
-Color_Off='\[\e[0m\]'       # Text Reset
+Color_Off='\[\e[0;00m\]'       # Text Reset
 
 # Regular Colors
 Black='\[\e[0;30m\]'        # Black
@@ -98,13 +96,6 @@ On_IWhite='\[\e[0;107m\]'   # White
 
 # Actual Aliases
 
-
-alias showmyinuse='mysql -uroot -pamesbery56 -e "show open tables where in_use"'
-alias showmyprocess='mysql -uroot -pamesbery56 -e "show processlist"'
-alias localmytop='mytop -uroot -pamesbery56'
-alias localmysql='mysql -uroot -pamesbery56'
-alias omnibot.on.dev='ssh -p 712 omnibot@dev.patient-pad.com'
-alias dev.connect='ssh -p 712 devraj@dev.patient-pad.com'
 alias nprompt_old="PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '"
 alias red="PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[01;31m\] '"
 alias noclose="PS1='                             Don'\''t close this terminal.\n\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '"
@@ -113,7 +104,7 @@ alias checkp='c=0;for i in $(jobs);do c=$[$c+1];done;if [ $c -ne 0 ];then noclos
 alias playpausepianobar="echo -n 'p' > ~/.config/pianobar/ctl"
 alias likecurrentpianobar="echo -n '+' > ~/.config/pianobar/ctl"
 
-alias nprompt="PS1='${Color_Off}${BGreen}\u${Blue}@${BGreen}`hostname -I` ${BBlue}\w \n\$ ${Color_Off}'"
+alias nprompt="PS1='${Color_Off}${Purple}\u${BBlue}@${Purple}`hostname` ${BBlue}\w \n\$ ${Color_Off}'"
 
 
 alias searchforhosts="nmap -sP 192.168.1.0-255"
