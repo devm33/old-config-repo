@@ -1,11 +1,10 @@
-" Vim Config file
+syntax on
 
+" tabs to spaces w/len 4
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
-" autoindent files
-set autoindent
-
-" enable mouse usage (all modes)
-set mouse=a
-
-" line numbers
-set number
+" autoindent
+set ai

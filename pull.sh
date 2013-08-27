@@ -11,6 +11,9 @@ echo "COPYING CONFIG FILES TO $HERE";
 
 # copy the files
 
+## zsh
+cp -f ~/.zshrc $HERE/zshrc;
+
 ## bash
 cp -f ~/.bashrc $HERE/bashrc;
 cp -f ~/.bash_aliases $HERE/bash_aliases;
